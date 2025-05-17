@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link href="https://fonts.cdnfonts.com/css/koulen" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="header">
+        <img src="pictures/fingerprint.png" alt="Logo">
+        VOTING SYSTEM
+    </div>
+    <div class="container">
+        <div class="background-overlay"></div>
+        <div class="content">
+            <div class="candidate-section">
+                <h2>CANDIDATES</h2>
+                <div class="candidates">
+                    <div class="candidate">
+                        <img src="pictures/jane.png" alt="Jane Doe">
+                        <div class="candidate-info">
+                            <strong>Jane Doe</strong><br>
+                            <span class="hori-line">&#124;</span>
+                            <span class="party">XY and AB Partylist</span>
+                        </div>
+                        <span class="view-button">&#8250;</span>
+                    </div>
+                    <div class="candidate">
+                        <img src="pictures/John.png" alt="John Doe">
+                        <div class="candidate-info">
+                            <strong>John Doe</strong><br>
+                            <span class="hori-line">&#124;</span>
+                            <span class="party">Monogamy Partylist</span>
+                        </div>
+                        <span class="view-button">&#8250;</span>
+                    </div>
+                    <div class="candidate">
+                        <img src="pictures/William.png" alt="William Angelbert von DeMarc">
+                        <div class="candidate-info">
+                            <strong>William Angelbert von DeMarc</strong><br>
+                            <span class="hori-line">&#124;</span>
+                            <span class="party">Independent</span>
+                        </div>
+                        <span class="view-button">&#8250;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="vote-section">
+                <img src="pictures/vote.png" alt="Vote">
+                <p>Please vote wisely</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-button hidden">&#8249;</button>
+
+    <div class="candidate-card hidden">
+        <div class="header-image">
+            <img src="pictures/jane.png" alt="Header Background" class="header-img" />
+        </div>
+        
+        <div class="profile-info">
+            <img src="pictures/candidate-photo.png" alt="Jane Doe" class="profile-pic" />
+            <h2 class="name">Jane Doe</h2>
+        </div>
+
+        <div class="info-section">
+            <div class="section">
+                <h4><span class="icon">👥</span> Affiliations</h4>
+                <hr />
+                <ul>
+                <li>XY and AB Partylist</li>
+                <li>Sangguniang Kabataan</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h4><span class="icon">📋</span> Platforms</h4>
+                <hr />
+                <ul>
+                <li>Feeding Program</li>
+                <li>Free Dental Care</li>
+                </ul>
+            </div>
+        
+            <div class="vote-box">
+                Current Votes: <span>120,690,012</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal hidden">
+            <div class="modal-header">
+            <span class="question-mark">?</span>
+            </div>
+            <div class="modal-body">
+            <p class="are-you-sure">Are you sure?</p>
+            <p class="voted-for">You have voted for: <span class="vote-name">Jane Doe</span></p>
+            <p class="instructions">
+                To confirm, please press the <span class="submit">Submit</span> button again<br/>
+                To cancel, please press the <span class="cancel">Cancel</span> button
+            </p>
+            </div>
+        </div>
+
+        <div class="modal hidden">
+            <div class="modal-header">
+            <span class="question-mark">?</span>
+            </div>
+            <div class="modal-body">
+            <p class="are-you-sure">Are you sure?</p>
+            <p class="voted-for">You have voted for: <span class="vote-name">------</span></p>
+            <p class="instructions">
+                To confirm, please press the <span class="submit">Submit</span> button again<br/>
+                To cancel, please press the <span class="cancel">Cancel</span> button
+            </p>
+            </div>
+            <div class="error-message">
+            Invalid vote detected. Please recast your vote
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+</html>
